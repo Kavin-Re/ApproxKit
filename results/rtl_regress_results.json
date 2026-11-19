@@ -1,0 +1,1743 @@
+{
+ "results": [
+  [
+   "exact_adder_N8",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "loa_adder_N8_K1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_adder_N8_K1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "eta_adder_N8_K1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K1_CELL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K1_CELL1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "loa_adder_N8_K2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_adder_N8_K2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "eta_adder_N8_K2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K2_CELL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K2_CELL1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "loa_adder_N8_K4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_adder_N8_K4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "eta_adder_N8_K4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K4_CELL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K4_CELL1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "loa_adder_N8_K6",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_adder_N8_K6",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "eta_adder_N8_K6",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K6_CELL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K6_CELL1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "loa_adder_N8_K7",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_adder_N8_K7",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "eta_adder_N8_K7",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K7_CELL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "ama_adder_N8_K7_CELL1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R1_P1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R1_P4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R2_P2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R2_P1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R3_P1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R3_P2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R4_P4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R7_P1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R8_P0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "gear_adder_N8_R1_P7",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "exact_mult_N8",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "bam_mult_N8_VBL0_HBL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "bam_mult_N8_VBL4_HBL0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "bam_mult_N8_VBL6_HBL2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "bam_mult_N8_VBL8_HBL3",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "bam_mult_N8_VBL14_HBL4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_mult_N8_K0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_mult_N8_K1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_mult_N8_K6",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_mult_N8_K8",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "trunc_mult_N8_K12",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K2",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K3",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K4",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K5",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K6",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "drum_mult_N8_K7",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "mitchell_mult_N8",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K0",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K1",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K3",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K5",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K8",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K10",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "booth_mult_N8_K12",
+   "RESULT PASS 65536 vectors"
+  ],
+  [
+   "exact_adder_N7",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "loa_adder_N7_K1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_adder_N7_K1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "eta_adder_N7_K1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K1_CELL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K1_CELL1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "loa_adder_N7_K2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_adder_N7_K2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "eta_adder_N7_K2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K2_CELL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K2_CELL1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "loa_adder_N7_K3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_adder_N7_K3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "eta_adder_N7_K3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K3_CELL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K3_CELL1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "loa_adder_N7_K5",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_adder_N7_K5",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "eta_adder_N7_K5",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K5_CELL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K5_CELL1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "loa_adder_N7_K6",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_adder_N7_K6",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "eta_adder_N7_K6",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K6_CELL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "ama_adder_N7_K6_CELL1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R1_P1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R1_P3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R2_P2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R2_P1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R3_P1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R3_P2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R3_P3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R6_P1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R7_P0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "gear_adder_N7_R1_P6",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "exact_mult_N7",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "bam_mult_N7_VBL0_HBL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "bam_mult_N7_VBL3_HBL0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "bam_mult_N7_VBL5_HBL2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "bam_mult_N7_VBL7_HBL2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "bam_mult_N7_VBL12_HBL3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_mult_N7_K0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_mult_N7_K1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_mult_N7_K5",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_mult_N7_K7",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "trunc_mult_N7_K10",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "drum_mult_N7_K2",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "drum_mult_N7_K3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "drum_mult_N7_K4",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "drum_mult_N7_K5",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "drum_mult_N7_K6",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "mitchell_mult_N7",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K0",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K1",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K3",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K4",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K7",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K9",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "booth_mult_N7_K10",
+   "RESULT PASS 16384 vectors"
+  ],
+  [
+   "exact_adder_N5",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "loa_adder_N5_K1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_adder_N5_K1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "eta_adder_N5_K1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K1_CELL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K1_CELL1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "loa_adder_N5_K2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_adder_N5_K2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "eta_adder_N5_K2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K2_CELL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K2_CELL1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "loa_adder_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_adder_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "eta_adder_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K3_CELL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K3_CELL1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "loa_adder_N5_K4",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_adder_N5_K4",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "eta_adder_N5_K4",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K4_CELL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "ama_adder_N5_K4_CELL1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R1_P1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R1_P2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R2_P2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R2_P1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R3_P1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R3_P2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R4_P1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R5_P0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "gear_adder_N5_R1_P4",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "exact_mult_N5",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "bam_mult_N5_VBL0_HBL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "bam_mult_N5_VBL2_HBL0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "bam_mult_N5_VBL3_HBL2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "bam_mult_N5_VBL5_HBL1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "bam_mult_N5_VBL8_HBL2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_mult_N5_K0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_mult_N5_K1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_mult_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_mult_N5_K5",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "trunc_mult_N5_K6",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "drum_mult_N5_K2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "drum_mult_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "drum_mult_N5_K4",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "mitchell_mult_N5",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K0",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K1",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K2",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K3",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K5",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K6",
+   "RESULT PASS 1024 vectors"
+  ],
+  [
+   "booth_mult_N5_K7",
+   "RESULT PASS 1024 vectors"
+  ]
+ ],
+ "synth": [
+  {
+   "case": "exact_adder_N8",
+   "cells": 60,
+   "ge_generic": 90.5,
+   "proxy_ge": 70.5,
+   "liberty_area_um2": 207.6992,
+   "cells_by_type": {
+    "$_ANDNOT_": 15,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "loa_adder_N8_K1",
+   "cells": 51,
+   "ge_generic": 80.5,
+   "proxy_ge": 69.5,
+   "liberty_area_um2": 205.1968,
+   "cells_by_type": {
+    "$_ANDNOT_": 12,
+    "$_AND_": 2,
+    "$_NAND_": 19,
+    "$_NOR_": 1,
+    "$_ORNOT_": 1,
+    "$_OR_": 2,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "trunc_adder_N8_K1",
+   "cells": 54,
+   "ge_generic": 87.5,
+   "proxy_ge": 61.0,
+   "liberty_area_um2": 180.1728,
+   "cells_by_type": {
+    "$_ANDNOT_": 12,
+    "$_AND_": 1,
+    "$_NAND_": 18,
+    "$_NOR_": 3,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 4,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "eta_adder_N8_K1",
+   "cells": 45,
+   "ge_generic": 72.5,
+   "proxy_ge": 68.0,
+   "liberty_area_um2": 186.4288,
+   "cells_by_type": {
+    "$_ANDNOT_": 9,
+    "$_AND_": 3,
+    "$_NAND_": 14,
+    "$_NOR_": 2,
+    "$_ORNOT_": 1,
+    "$_OR_": 3,
+    "$_XNOR_": 2,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "ama_adder_N8_K1_CELL0",
+   "cells": 56,
+   "ge_generic": 83.5,
+   "proxy_ge": 66.5,
+   "liberty_area_um2": 192.6848,
+   "cells_by_type": {
+    "$_ANDNOT_": 13,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 12
+   }
+  },
+  {
+   "case": "ama_adder_N8_K1_CELL1",
+   "cells": 38,
+   "ge_generic": 59.0,
+   "proxy_ge": 73.0,
+   "liberty_area_um2": 198.9408,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 1,
+    "$_NAND_": 19,
+    "$_NOR_": 1,
+    "$_NOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 2,
+    "$_XOR_": 11,
+    "$_ORNOT_": 1
+   }
+  },
+  {
+   "case": "loa_adder_N8_K2",
+   "cells": 43,
+   "ge_generic": 68.0,
+   "proxy_ge": 61.5,
+   "liberty_area_um2": 183.9264,
+   "cells_by_type": {
+    "$_ANDNOT_": 9,
+    "$_AND_": 2,
+    "$_NAND_": 16,
+    "$_NOR_": 1,
+    "$_OR_": 3,
+    "$_XNOR_": 1,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "trunc_adder_N8_K2",
+   "cells": 46,
+   "ge_generic": 74.5,
+   "proxy_ge": 51.5,
+   "liberty_area_um2": 152.6464,
+   "cells_by_type": {
+    "$_ANDNOT_": 10,
+    "$_AND_": 1,
+    "$_NAND_": 15,
+    "$_NOR_": 2,
+    "$_ORNOT_": 2,
+    "$_OR_": 2,
+    "$_XNOR_": 3,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "eta_adder_N8_K2",
+   "cells": 41,
+   "ge_generic": 64.5,
+   "proxy_ge": 65.5,
+   "liberty_area_um2": 167.6608,
+   "cells_by_type": {
+    "$_ANDNOT_": 7,
+    "$_AND_": 3,
+    "$_NAND_": 13,
+    "$_NOR_": 3,
+    "$_ORNOT_": 1,
+    "$_OR_": 3,
+    "$_XNOR_": 2,
+    "$_XOR_": 9
+   }
+  },
+  {
+   "case": "ama_adder_N8_K2_CELL0",
+   "cells": 48,
+   "ge_generic": 71.5,
+   "proxy_ge": 57.0,
+   "liberty_area_um2": 165.1584,
+   "cells_by_type": {
+    "$_ANDNOT_": 11,
+    "$_AND_": 1,
+    "$_NAND_": 19,
+    "$_NOR_": 4,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 10
+   }
+  },
+  {
+   "case": "ama_adder_N8_K2_CELL1",
+   "cells": 38,
+   "ge_generic": 57.5,
+   "proxy_ge": 70.0,
+   "liberty_area_um2": 187.68,
+   "cells_by_type": {
+    "$_ANDNOT_": 2,
+    "$_AND_": 4,
+    "$_NAND_": 15,
+    "$_NOR_": 2,
+    "$_NOT_": 1,
+    "$_OR_": 3,
+    "$_XNOR_": 3,
+    "$_XOR_": 7,
+    "$_ORNOT_": 1
+   }
+  },
+  {
+   "case": "loa_adder_N8_K4",
+   "cells": 27,
+   "ge_generic": 42.0,
+   "proxy_ge": 45.5,
+   "liberty_area_um2": 141.3856,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 2,
+    "$_NAND_": 10,
+    "$_NOR_": 1,
+    "$_ORNOT_": 1,
+    "$_OR_": 5,
+    "$_XNOR_": 1,
+    "$_XOR_": 6
+   }
+  },
+  {
+   "case": "trunc_adder_N8_K4",
+   "cells": 26,
+   "ge_generic": 42.0,
+   "proxy_ge": 32.5,
+   "liberty_area_um2": 97.5936,
+   "cells_by_type": {
+    "$_ANDNOT_": 4,
+    "$_AND_": 1,
+    "$_NAND_": 9,
+    "$_NOR_": 1,
+    "$_ORNOT_": 1,
+    "$_OR_": 2,
+    "$_XNOR_": 1,
+    "$_XOR_": 7
+   }
+  },
+  {
+   "case": "eta_adder_N8_K4",
+   "cells": 35,
+   "ge_generic": 51.0,
+   "proxy_ge": 60.5,
+   "liberty_area_um2": 138.8832,
+   "cells_by_type": {
+    "$_ANDNOT_": 4,
+    "$_AND_": 4,
+    "$_NAND_": 13,
+    "$_NOR_": 4,
+    "$_ORNOT_": 1,
+    "$_OR_": 2,
+    "$_XNOR_": 1,
+    "$_XOR_": 6
+   }
+  },
+  {
+   "case": "ama_adder_N8_K4_CELL0",
+   "cells": 36,
+   "ge_generic": 59.5,
+   "proxy_ge": 38.0,
+   "liberty_area_um2": 110.1056,
+   "cells_by_type": {
+    "$_ANDNOT_": 7,
+    "$_AND_": 1,
+    "$_NAND_": 12,
+    "$_NOR_": 1,
+    "$_ORNOT_": 1,
+    "$_OR_": 2,
+    "$_XNOR_": 4,
+    "$_XOR_": 8
+   }
+  },
+  {
+   "case": "ama_adder_N8_K4_CELL1",
+   "cells": 36,
+   "ge_generic": 50.0,
+   "proxy_ge": 64.0,
+   "liberty_area_um2": 175.168,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 3,
+    "$_NAND_": 17,
+    "$_NOR_": 1,
+    "$_NOT_": 2,
+    "$_OR_": 4,
+    "$_XNOR_": 2,
+    "$_XOR_": 5,
+    "$_ORNOT_": 1
+   }
+  },
+  {
+   "case": "loa_adder_N8_K6",
+   "cells": 22,
+   "ge_generic": 36.0,
+   "proxy_ge": 29.5,
+   "liberty_area_um2": 98.8448,
+   "cells_by_type": {
+    "$_ANDNOT_": 3,
+    "$_AND_": 1,
+    "$_NAND_": 6,
+    "$_OR_": 6,
+    "$_XNOR_": 2,
+    "$_XOR_": 4
+   }
+  },
+  {
+   "case": "trunc_adder_N8_K6",
+   "cells": 8,
+   "ge_generic": 13.5,
+   "proxy_ge": 13.5,
+   "liberty_area_um2": 42.5408,
+   "cells_by_type": {
+    "$_AND_": 1,
+    "$_OR_": 1,
+    "$_XOR_": 3,
+    "$_NAND_": 3
+   }
+  },
+  {
+   "case": "eta_adder_N8_K6",
+   "cells": 29,
+   "ge_generic": 38.5,
+   "proxy_ge": 55.5,
+   "liberty_area_um2": 115.1104,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 5,
+    "$_NAND_": 13,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 3,
+    "$_NOR_": 5
+   }
+  },
+  {
+   "case": "ama_adder_N8_K6_CELL0",
+   "cells": 18,
+   "ge_generic": 30.5,
+   "proxy_ge": 19.0,
+   "liberty_area_um2": 55.0528,
+   "cells_by_type": {
+    "$_ANDNOT_": 2,
+    "$_AND_": 1,
+    "$_NAND_": 6,
+    "$_NOR_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 3,
+    "$_XOR_": 4
+   }
+  },
+  {
+   "case": "ama_adder_N8_K6_CELL1",
+   "cells": 40,
+   "ge_generic": 53.5,
+   "proxy_ge": 58.0,
+   "liberty_area_um2": 157.6512,
+   "cells_by_type": {
+    "$_ANDNOT_": 7,
+    "$_AND_": 4,
+    "$_NAND_": 15,
+    "$_NOR_": 2,
+    "$_NOT_": 2,
+    "$_OR_": 5,
+    "$_XNOR_": 1,
+    "$_XOR_": 3,
+    "$_ORNOT_": 1
+   }
+  },
+  {
+   "case": "loa_adder_N8_K7",
+   "cells": 16,
+   "ge_generic": 25.5,
+   "proxy_ge": 21.5,
+   "liberty_area_um2": 83.8304,
+   "cells_by_type": {
+    "$_ANDNOT_": 2,
+    "$_NAND_": 3,
+    "$_OR_": 7,
+    "$_XNOR_": 1,
+    "$_XOR_": 2,
+    "$_AND_": 1
+   }
+  },
+  {
+   "case": "trunc_adder_N8_K7",
+   "cells": 2,
+   "ge_generic": 4.0,
+   "proxy_ge": 4.0,
+   "liberty_area_um2": 15.0144,
+   "cells_by_type": {
+    "$_AND_": 1,
+    "$_XOR_": 1
+   }
+  },
+  {
+   "case": "eta_adder_N8_K7",
+   "cells": 26,
+   "ge_generic": 31.0,
+   "proxy_ge": 53.0,
+   "liberty_area_um2": 100.096,
+   "cells_by_type": {
+    "$_AND_": 6,
+    "$_OR_": 1,
+    "$_XOR_": 1,
+    "$_NAND_": 12,
+    "$_NOR_": 6
+   }
+  },
+  {
+   "case": "ama_adder_N8_K7_CELL0",
+   "cells": 10,
+   "ge_generic": 17.5,
+   "proxy_ge": 9.5,
+   "liberty_area_um2": 33.7824,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 2,
+    "$_NAND_": 3,
+    "$_XOR_": 2
+   }
+  },
+  {
+   "case": "ama_adder_N8_K7_CELL1",
+   "cells": 41,
+   "ge_generic": 53.5,
+   "proxy_ge": 55.0,
+   "liberty_area_um2": 143.888,
+   "cells_by_type": {
+    "$_ANDNOT_": 9,
+    "$_AND_": 5,
+    "$_NAND_": 13,
+    "$_NOR_": 3,
+    "$_NOT_": 2,
+    "$_OR_": 6,
+    "$_XNOR_": 1,
+    "$_XOR_": 1,
+    "$_ORNOT_": 1
+   }
+  },
+  {
+   "case": "gear_adder_N8_R1_P1",
+   "cells": 27,
+   "ge_generic": 51.0,
+   "proxy_ge": 94.5,
+   "liberty_area_um2": 170.1632,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 1,
+    "$_NAND_": 9,
+    "$_OR_": 1,
+    "$_XNOR_": 6,
+    "$_XOR_": 9
+   }
+  },
+  {
+   "case": "gear_adder_N8_R1_P4",
+   "cells": 53,
+   "ge_generic": 82.5,
+   "proxy_ge": 168.0,
+   "liberty_area_um2": 255.2448,
+   "cells_by_type": {
+    "$_ANDNOT_": 2,
+    "$_AND_": 6,
+    "$_NAND_": 21,
+    "$_NOR_": 3,
+    "$_ORNOT_": 4,
+    "$_OR_": 2,
+    "$_XNOR_": 4,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "gear_adder_N8_R2_P2",
+   "cells": 38,
+   "ge_generic": 63.0,
+   "proxy_ge": 97.5,
+   "liberty_area_um2": 212.704,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 5,
+    "$_NAND_": 14,
+    "$_NOR_": 2,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 3,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "gear_adder_N8_R2_P1",
+   "cells": 42,
+   "ge_generic": 72.5,
+   "proxy_ge": 92.0,
+   "liberty_area_um2": 198.9408,
+   "cells_by_type": {
+    "$_ANDNOT_": 8,
+    "$_AND_": 6,
+    "$_NAND_": 11,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 3,
+    "$_XOR_": 12
+   }
+  },
+  {
+   "case": "gear_adder_N8_R3_P1",
+   "cells": 38,
+   "ge_generic": 63.0,
+   "proxy_ge": 97.5,
+   "liberty_area_um2": 212.704,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 5,
+    "$_NAND_": 15,
+    "$_NOR_": 1,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 3,
+    "$_XOR_": 11
+   }
+  },
+  {
+   "case": "gear_adder_N8_R3_P2",
+   "cells": 56,
+   "ge_generic": 87.5,
+   "proxy_ge": 84.0,
+   "liberty_area_um2": 210.2016,
+   "cells_by_type": {
+    "$_ANDNOT_": 12,
+    "$_AND_": 3,
+    "$_NAND_": 17,
+    "$_NOR_": 4,
+    "$_ORNOT_": 3,
+    "$_OR_": 3,
+    "$_XNOR_": 2,
+    "$_XOR_": 12
+   }
+  },
+  {
+   "case": "gear_adder_N8_R4_P4",
+   "cells": 60,
+   "ge_generic": 90.5,
+   "proxy_ge": 70.5,
+   "liberty_area_um2": 207.6992,
+   "cells_by_type": {
+    "$_ANDNOT_": 15,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "gear_adder_N8_R7_P1",
+   "cells": 60,
+   "ge_generic": 90.5,
+   "proxy_ge": 70.5,
+   "liberty_area_um2": 207.6992,
+   "cells_by_type": {
+    "$_ANDNOT_": 15,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "gear_adder_N8_R8_P0",
+   "cells": 60,
+   "ge_generic": 90.5,
+   "proxy_ge": 70.5,
+   "liberty_area_um2": 207.6992,
+   "cells_by_type": {
+    "$_ANDNOT_": 15,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "gear_adder_N8_R1_P7",
+   "cells": 60,
+   "ge_generic": 90.5,
+   "proxy_ge": 70.5,
+   "liberty_area_um2": 207.6992,
+   "cells_by_type": {
+    "$_ANDNOT_": 15,
+    "$_AND_": 1,
+    "$_NAND_": 22,
+    "$_NOR_": 5,
+    "$_ORNOT_": 2,
+    "$_OR_": 1,
+    "$_XNOR_": 1,
+    "$_XOR_": 13
+   }
+  },
+  {
+   "case": "exact_mult_N8",
+   "cells": 351,
+   "ge_generic": 552.5,
+   "proxy_ge": 552.0,
+   "liberty_area_um2": 1926.848,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 83,
+    "$_NAND_": 136,
+    "$_NOR_": 12,
+    "$_NOT_": 7,
+    "$_ORNOT_": 4,
+    "$_OR_": 1,
+    "$_XNOR_": 3,
+    "$_XOR_": 104
+   }
+  },
+  {
+   "case": "bam_mult_N8_VBL0_HBL0",
+   "cells": 531,
+   "ge_generic": 849.0,
+   "proxy_ge": 552.0,
+   "liberty_area_um2": 2054.4704,
+   "cells_by_type": {
+    "$_ANDNOT_": 101,
+    "$_AND_": 88,
+    "$_NAND_": 138,
+    "$_NOR_": 9,
+    "$_NOT_": 11,
+    "$_ORNOT_": 10,
+    "$_OR_": 37,
+    "$_XNOR_": 24,
+    "$_XOR_": 113
+   }
+  },
+  {
+   "case": "bam_mult_N8_VBL4_HBL0",
+   "cells": 446,
+   "ge_generic": 710.0,
+   "proxy_ge": 480.0,
+   "liberty_area_um2": 1709.1392,
+   "cells_by_type": {
+    "$_ANDNOT_": 83,
+    "$_AND_": 73,
+    "$_NAND_": 120,
+    "$_NOR_": 10,
+    "$_NOT_": 8,
+    "$_ORNOT_": 10,
+    "$_OR_": 28,
+    "$_XNOR_": 18,
+    "$_XOR_": 96
+   }
+  },
+  {
+   "case": "bam_mult_N8_VBL6_HBL2",
+   "cells": 299,
+   "ge_generic": 473.5,
+   "proxy_ge": 323.0,
+   "liberty_area_um2": 1118.5728,
+   "cells_by_type": {
+    "$_ANDNOT_": 53,
+    "$_AND_": 49,
+    "$_NAND_": 80,
+    "$_NOR_": 6,
+    "$_NOT_": 7,
+    "$_ORNOT_": 8,
+    "$_OR_": 21,
+    "$_XNOR_": 13,
+    "$_XOR_": 62
+   }
+  },
+  {
+   "case": "bam_mult_N8_VBL8_HBL3",
+   "cells": 201,
+   "ge_generic": 322.5,
+   "proxy_ge": 199.0,
+   "liberty_area_um2": 724.4448,
+   "cells_by_type": {
+    "$_ANDNOT_": 37,
+    "$_AND_": 36,
+    "$_NAND_": 47,
+    "$_NOR_": 3,
+    "$_NOT_": 7,
+    "$_ORNOT_": 7,
+    "$_OR_": 11,
+    "$_XNOR_": 13,
+    "$_XOR_": 40
+   }
+  },
+  {
+   "case": "bam_mult_N8_VBL14_HBL4",
+   "cells": 1,
+   "ge_generic": 1.5,
+   "proxy_ge": 1.5,
+   "liberty_area_um2": 6.256,
+   "cells_by_type": {
+    "$_AND_": 1
+   }
+  },
+  {
+   "case": "trunc_mult_N8_K0",
+   "cells": 544,
+   "ge_generic": 862.5,
+   "proxy_ge": 552.0,
+   "liberty_area_um2": 2004.4224,
+   "cells_by_type": {
+    "$_ANDNOT_": 102,
+    "$_AND_": 87,
+    "$_NAND_": 138,
+    "$_NOR_": 13,
+    "$_NOT_": 17,
+    "$_ORNOT_": 9,
+    "$_OR_": 39,
+    "$_XNOR_": 27,
+    "$_XOR_": 112
+   }
+  },
+  {
+   "case": "trunc_mult_N8_K1",
+   "cells": 543,
+   "ge_generic": 861.0,
+   "proxy_ge": 550.5,
+   "liberty_area_um2": 1998.1664,
+   "cells_by_type": {
+    "$_ANDNOT_": 102,
+    "$_AND_": 86,
+    "$_NAND_": 138,
+    "$_NOR_": 13,
+    "$_NOT_": 17,
+    "$_ORNOT_": 9,
+    "$_OR_": 39,
+    "$_XNOR_": 27,
+    "$_XOR_": 112
+   }
+  },
+  {
+   "case": "trunc_mult_N8_K6",
+   "cells": 332,
+   "ge_generic": 518.0,
+   "proxy_ge": 378.0,
+   "liberty_area_um2": 1292.4896,
+   "cells_by_type": {
+    "$_ANDNOT_": 64,
+    "$_AND_": 60,
+    "$_NAND_": 93,
+    "$_NOR_": 7,
+    "$_NOT_": 6,
+    "$_ORNOT_": 1,
+    "$_OR_": 25,
+    "$_XNOR_": 1,
+    "$_XOR_": 75
+   }
+  },
+  {
+   "case": "trunc_mult_N8_K8",
+   "cells": 159,
+   "ge_generic": 255.0,
+   "proxy_ge": 232.0,
+   "liberty_area_um2": 904.6176,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 45,
+    "$_NAND_": 52,
+    "$_NOR_": 3,
+    "$_NOT_": 6,
+    "$_ORNOT_": 1,
+    "$_OR_": 1,
+    "$_XNOR_": 2,
+    "$_XOR_": 48
+   }
+  },
+  {
+   "case": "trunc_mult_N8_K12",
+   "cells": 31,
+   "ge_generic": 52.5,
+   "proxy_ge": 28.0,
+   "liberty_area_um2": 98.8448,
+   "cells_by_type": {
+    "$_ANDNOT_": 4,
+    "$_AND_": 8,
+    "$_NAND_": 6,
+    "$_OR_": 4,
+    "$_XNOR_": 4,
+    "$_XOR_": 5
+   }
+  },
+  {
+   "case": "drum_mult_N8_K2",
+   "cells": 131,
+   "ge_generic": 196.5,
+   "proxy_ge": 276.5,
+   "liberty_area_um2": 664.3872,
+   "cells_by_type": {
+    "$_ANDNOT_": 9,
+    "$_AND_": 38,
+    "$_MUX_": 13,
+    "$_NAND_": 20,
+    "$_NOR_": 20,
+    "$_NOT_": 3,
+    "$_ORNOT_": 13,
+    "$_OR_": 5,
+    "$_XNOR_": 7,
+    "$_XOR_": 3
+   }
+  },
+  {
+   "case": "drum_mult_N8_K3",
+   "cells": 169,
+   "ge_generic": 272.0,
+   "proxy_ge": 327.5,
+   "liberty_area_um2": 955.9168,
+   "cells_by_type": {
+    "$_ANDNOT_": 7,
+    "$_AND_": 43,
+    "$_MUX_": 28,
+    "$_NAND_": 29,
+    "$_NOR_": 18,
+    "$_NOT_": 1,
+    "$_ORNOT_": 17,
+    "$_OR_": 11,
+    "$_XNOR_": 5,
+    "$_XOR_": 10
+   }
+  },
+  {
+   "case": "drum_mult_N8_K4",
+   "cells": 223,
+   "ge_generic": 361.0,
+   "proxy_ge": 400.5,
+   "liberty_area_um2": 1294.992,
+   "cells_by_type": {
+    "$_ANDNOT_": 9,
+    "$_AND_": 54,
+    "$_MUX_": 38,
+    "$_NAND_": 52,
+    "$_NOR_": 23,
+    "$_NOT_": 1,
+    "$_ORNOT_": 11,
+    "$_OR_": 8,
+    "$_XNOR_": 4,
+    "$_XOR_": 23
+   }
+  },
+  {
+   "case": "drum_mult_N8_K5",
+   "cells": 222,
+   "ge_generic": 376.5,
+   "proxy_ge": 430.5,
+   "liberty_area_um2": 1398.8416,
+   "cells_by_type": {
+    "$_ANDNOT_": 10,
+    "$_AND_": 46,
+    "$_MUX_": 44,
+    "$_NAND_": 55,
+    "$_NOR_": 18,
+    "$_NOT_": 1,
+    "$_ORNOT_": 5,
+    "$_OR_": 6,
+    "$_XNOR_": 2,
+    "$_XOR_": 35
+   }
+  },
+  {
+   "case": "drum_mult_N8_K6",
+   "cells": 285,
+   "ge_generic": 473.0,
+   "proxy_ge": 542.5,
+   "liberty_area_um2": 1646.5792,
+   "cells_by_type": {
+    "$_ANDNOT_": 5,
+    "$_AND_": 63,
+    "$_MUX_": 44,
+    "$_NAND_": 82,
+    "$_NOR_": 25,
+    "$_NOT_": 1,
+    "$_ORNOT_": 5,
+    "$_OR_": 4,
+    "$_XNOR_": 1,
+    "$_XOR_": 55
+   }
+  },
+  {
+   "case": "drum_mult_N8_K7",
+   "cells": 330,
+   "ge_generic": 532.5,
+   "proxy_ge": 601.5,
+   "liberty_area_um2": 1812.9888,
+   "cells_by_type": {
+    "$_ANDNOT_": 1,
+    "$_AND_": 68,
+    "$_MUX_": 36,
+    "$_NAND_": 105,
+    "$_NOR_": 6,
+    "$_NOT_": 23,
+    "$_ORNOT_": 3,
+    "$_OR_": 8,
+    "$_XNOR_": 2,
+    "$_XOR_": 78
+   }
+  },
+  {
+   "case": "mitchell_mult_N8",
+   "cells": 335,
+   "ge_generic": 539.0,
+   "proxy_ge": 402.5,
+   "liberty_area_um2": 1848.0224,
+   "cells_by_type": {
+    "$_ANDNOT_": 17,
+    "$_AND_": 67,
+    "$_MUX_": 60,
+    "$_NAND_": 83,
+    "$_NOR_": 24,
+    "$_NOT_": 7,
+    "$_ORNOT_": 27,
+    "$_OR_": 13,
+    "$_XNOR_": 10,
+    "$_XOR_": 27
+   }
+  },
+  {
+   "case": "booth_mult_N8_K0",
+   "cells": 444,
+   "ge_generic": 621.5,
+   "proxy_ge": 526.0,
+   "liberty_area_um2": 2033.2,
+   "cells_by_type": {
+    "$_ANDNOT_": 28,
+    "$_AND_": 74,
+    "$_MUX_": 3,
+    "$_NAND_": 171,
+    "$_NOR_": 6,
+    "$_NOT_": 54,
+    "$_ORNOT_": 8,
+    "$_OR_": 5,
+    "$_XNOR_": 18,
+    "$_XOR_": 77
+   }
+  },
+  {
+   "case": "booth_mult_N8_K1",
+   "cells": 388,
+   "ge_generic": 589.5,
+   "proxy_ge": 522.0,
+   "liberty_area_um2": 2020.688,
+   "cells_by_type": {
+    "$_ANDNOT_": 27,
+    "$_AND_": 73,
+    "$_MUX_": 3,
+    "$_NAND_": 171,
+    "$_NOR_": 6,
+    "$_NOT_": 1,
+    "$_ORNOT_": 8,
+    "$_OR_": 5,
+    "$_XNOR_": 18,
+    "$_XOR_": 76
+   }
+  },
+  {
+   "case": "booth_mult_N8_K3",
+   "cells": 360,
+   "ge_generic": 551.0,
+   "proxy_ge": 500.5,
+   "liberty_area_um2": 1925.5968,
+   "cells_by_type": {
+    "$_ANDNOT_": 24,
+    "$_AND_": 67,
+    "$_MUX_": 3,
+    "$_NAND_": 155,
+    "$_NOR_": 7,
+    "$_NOT_": 1,
+    "$_ORNOT_": 10,
+    "$_OR_": 3,
+    "$_XNOR_": 20,
+    "$_XOR_": 70
+   }
+  },
+  {
+   "case": "booth_mult_N8_K5",
+   "cells": 320,
+   "ge_generic": 484.0,
+   "proxy_ge": 452.0,
+   "liberty_area_um2": 1666.5984,
+   "cells_by_type": {
+    "$_ANDNOT_": 18,
+    "$_AND_": 54,
+    "$_MUX_": 4,
+    "$_NAND_": 148,
+    "$_NOR_": 6,
+    "$_NOT_": 2,
+    "$_ORNOT_": 7,
+    "$_OR_": 2,
+    "$_XNOR_": 13,
+    "$_XOR_": 66
+   }
+  },
+  {
+   "case": "booth_mult_N8_K8",
+   "cells": 208,
+   "ge_generic": 325.0,
+   "proxy_ge": 332.0,
+   "liberty_area_um2": 1132.336,
+   "cells_by_type": {
+    "$_ANDNOT_": 8,
+    "$_AND_": 32,
+    "$_MUX_": 4,
+    "$_NAND_": 89,
+    "$_NOR_": 7,
+    "$_NOT_": 1,
+    "$_ORNOT_": 6,
+    "$_OR_": 3,
+    "$_XNOR_": 20,
+    "$_XOR_": 38
+   }
+  },
+  {
+   "case": "booth_mult_N8_K10",
+   "cells": 126,
+   "ge_generic": 197.0,
+   "proxy_ge": 216.0,
+   "liberty_area_um2": 673.1456,
+   "cells_by_type": {
+    "$_ANDNOT_": 3,
+    "$_AND_": 19,
+    "$_MUX_": 3,
+    "$_NAND_": 53,
+    "$_NOR_": 5,
+    "$_NOT_": 1,
+    "$_ORNOT_": 6,
+    "$_OR_": 1,
+    "$_XNOR_": 14,
+    "$_XOR_": 21
+   }
+  },
+  {
+   "case": "booth_mult_N8_K12",
+   "cells": 66,
+   "ge_generic": 97.5,
+   "proxy_ge": 127.0,
+   "liberty_area_um2": 311.5488,
+   "cells_by_type": {
+    "$_ANDNOT_": 3,
+    "$_AND_": 10,
+    "$_MUX_": 2,
+    "$_NAND_": 21,
+    "$_NOR_": 2,
+    "$_NOT_": 7,
+    "$_ORNOT_": 5,
+    "$_OR_": 1,
+    "$_XNOR_": 8,
+    "$_XOR_": 7
+   }
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+blur_odd_psnr|sky130 -> bw_trunc_k12_c1, sdrum_k2, smag_trunc8_sat, smag_trunc8, bw_trunc_k8_c1, smag_bam_6_2, sdrum_k4, bw_trunc_k6_c1, bw_orlow_k6, bw_trunc_k4_c1, bw_trunc_k2_c1
+blur_odd_psnr|ice40 -> bw_trunc_k12_c1, bw_trunc_k8_c0, bw_trunc_k8_c1, bw_trunc_k6_c0, bw_trunc_k6_c1, bw_orlow_k6, bw_trunc_k4_c1, bw_trunc_k2_c1
+sharpen_ssim|sky130 -> bw_trunc_k12_c1, sdrum_k2, smag_trunc8_sat, smag_trunc8, smag_bam_6_2, bw_orlow_k6, bw_trunc_k4_c0
+sharpen_ssim|ice40 -> bw_trunc_k12_c1, bw_trunc_k8_c0, bw_trunc_k8_c1, smag_trunc8_sat, bw_trunc_k6_c0, bw_orlow_k6, bw_trunc_k4_c0
+dot_snr|sky130 -> bw_trunc_k12_c1, smag_trunc8_sat, bw_trunc_k8_c1, smag_bam_6_2, smag_booth8, bw_trunc_k6_c1, bw_trunc_k4_c1, bw_trunc_k2_c1
+dot_snr|ice40 -> bw_trunc_k12_c1, bw_trunc_k8_c1, bw_trunc_k6_c1, bw_trunc_k4_c1, bw_trunc_k2_c1

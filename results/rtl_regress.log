@@ -1,0 +1,236 @@
+RESULT PASS 65536 vectors          exact_adder_N8
+    yosys: 60 generic cells, 90.5 GE-weighted | proxy 70.5 | mapped 207.6992 um^2
+RESULT PASS 65536 vectors          loa_adder_N8_K1
+    yosys: 51 generic cells, 80.5 GE-weighted | proxy 69.5 | mapped 205.1968 um^2
+RESULT PASS 65536 vectors          trunc_adder_N8_K1
+    yosys: 54 generic cells, 87.5 GE-weighted | proxy 61.0 | mapped 180.1728 um^2
+RESULT PASS 65536 vectors          eta_adder_N8_K1
+    yosys: 45 generic cells, 72.5 GE-weighted | proxy 68.0 | mapped 186.4288 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K1_CELL0
+    yosys: 56 generic cells, 83.5 GE-weighted | proxy 66.5 | mapped 192.6848 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K1_CELL1
+    yosys: 38 generic cells, 59.0 GE-weighted | proxy 73.0 | mapped 198.9408 um^2
+RESULT PASS 65536 vectors          loa_adder_N8_K2
+    yosys: 43 generic cells, 68.0 GE-weighted | proxy 61.5 | mapped 183.9264 um^2
+RESULT PASS 65536 vectors          trunc_adder_N8_K2
+    yosys: 46 generic cells, 74.5 GE-weighted | proxy 51.5 | mapped 152.6464 um^2
+RESULT PASS 65536 vectors          eta_adder_N8_K2
+    yosys: 41 generic cells, 64.5 GE-weighted | proxy 65.5 | mapped 167.6608 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K2_CELL0
+    yosys: 48 generic cells, 71.5 GE-weighted | proxy 57.0 | mapped 165.1584 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K2_CELL1
+    yosys: 38 generic cells, 57.5 GE-weighted | proxy 70.0 | mapped 187.68 um^2
+RESULT PASS 65536 vectors          loa_adder_N8_K4
+    yosys: 27 generic cells, 42.0 GE-weighted | proxy 45.5 | mapped 141.3856 um^2
+RESULT PASS 65536 vectors          trunc_adder_N8_K4
+    yosys: 26 generic cells, 42.0 GE-weighted | proxy 32.5 | mapped 97.5936 um^2
+RESULT PASS 65536 vectors          eta_adder_N8_K4
+    yosys: 35 generic cells, 51.0 GE-weighted | proxy 60.5 | mapped 138.8832 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K4_CELL0
+    yosys: 36 generic cells, 59.5 GE-weighted | proxy 38.0 | mapped 110.1056 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K4_CELL1
+    yosys: 36 generic cells, 50.0 GE-weighted | proxy 64.0 | mapped 175.168 um^2
+RESULT PASS 65536 vectors          loa_adder_N8_K6
+    yosys: 22 generic cells, 36.0 GE-weighted | proxy 29.5 | mapped 98.8448 um^2
+RESULT PASS 65536 vectors          trunc_adder_N8_K6
+    yosys: 8 generic cells, 13.5 GE-weighted | proxy 13.5 | mapped 42.5408 um^2
+RESULT PASS 65536 vectors          eta_adder_N8_K6
+    yosys: 29 generic cells, 38.5 GE-weighted | proxy 55.5 | mapped 115.1104 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K6_CELL0
+    yosys: 18 generic cells, 30.5 GE-weighted | proxy 19.0 | mapped 55.0528 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K6_CELL1
+    yosys: 40 generic cells, 53.5 GE-weighted | proxy 58.0 | mapped 157.6512 um^2
+RESULT PASS 65536 vectors          loa_adder_N8_K7
+    yosys: 16 generic cells, 25.5 GE-weighted | proxy 21.5 | mapped 83.8304 um^2
+RESULT PASS 65536 vectors          trunc_adder_N8_K7
+    yosys: 2 generic cells, 4.0 GE-weighted | proxy 4.0 | mapped 15.0144 um^2
+RESULT PASS 65536 vectors          eta_adder_N8_K7
+    yosys: 26 generic cells, 31.0 GE-weighted | proxy 53.0 | mapped 100.096 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K7_CELL0
+    yosys: 10 generic cells, 17.5 GE-weighted | proxy 9.5 | mapped 33.7824 um^2
+RESULT PASS 65536 vectors          ama_adder_N8_K7_CELL1
+    yosys: 41 generic cells, 53.5 GE-weighted | proxy 55.0 | mapped 143.888 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R1_P1
+    yosys: 27 generic cells, 51.0 GE-weighted | proxy 94.5 | mapped 170.1632 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R1_P4
+    yosys: 53 generic cells, 82.5 GE-weighted | proxy 168.0 | mapped 255.2448 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R2_P2
+    yosys: 38 generic cells, 63.0 GE-weighted | proxy 97.5 | mapped 212.704 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R2_P1
+    yosys: 42 generic cells, 72.5 GE-weighted | proxy 92.0 | mapped 198.9408 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R3_P1
+    yosys: 38 generic cells, 63.0 GE-weighted | proxy 97.5 | mapped 212.704 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R3_P2
+    yosys: 56 generic cells, 87.5 GE-weighted | proxy 84.0 | mapped 210.2016 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R4_P4
+    yosys: 60 generic cells, 90.5 GE-weighted | proxy 70.5 | mapped 207.6992 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R7_P1
+    yosys: 60 generic cells, 90.5 GE-weighted | proxy 70.5 | mapped 207.6992 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R8_P0
+    yosys: 60 generic cells, 90.5 GE-weighted | proxy 70.5 | mapped 207.6992 um^2
+RESULT PASS 65536 vectors          gear_adder_N8_R1_P7
+    yosys: 60 generic cells, 90.5 GE-weighted | proxy 70.5 | mapped 207.6992 um^2
+RESULT PASS 65536 vectors          exact_mult_N8
+    yosys: 351 generic cells, 552.5 GE-weighted | proxy 552.0 | mapped 1926.848 um^2
+RESULT PASS 65536 vectors          bam_mult_N8_VBL0_HBL0
+    yosys: 531 generic cells, 849.0 GE-weighted | proxy 552.0 | mapped 2054.4704 um^2
+RESULT PASS 65536 vectors          bam_mult_N8_VBL4_HBL0
+    yosys: 446 generic cells, 710.0 GE-weighted | proxy 480.0 | mapped 1709.1392 um^2
+RESULT PASS 65536 vectors          bam_mult_N8_VBL6_HBL2
+    yosys: 299 generic cells, 473.5 GE-weighted | proxy 323.0 | mapped 1118.5728 um^2
+RESULT PASS 65536 vectors          bam_mult_N8_VBL8_HBL3
+    yosys: 201 generic cells, 322.5 GE-weighted | proxy 199.0 | mapped 724.4448 um^2
+RESULT PASS 65536 vectors          bam_mult_N8_VBL14_HBL4
+    yosys: 1 generic cells, 1.5 GE-weighted | proxy 1.5 | mapped 6.256 um^2
+RESULT PASS 65536 vectors          trunc_mult_N8_K0
+    yosys: 544 generic cells, 862.5 GE-weighted | proxy 552.0 | mapped 2004.4224 um^2
+RESULT PASS 65536 vectors          trunc_mult_N8_K1
+    yosys: 543 generic cells, 861.0 GE-weighted | proxy 550.5 | mapped 1998.1664 um^2
+RESULT PASS 65536 vectors          trunc_mult_N8_K6
+    yosys: 332 generic cells, 518.0 GE-weighted | proxy 378.0 | mapped 1292.4896 um^2
+RESULT PASS 65536 vectors          trunc_mult_N8_K8
+    yosys: 159 generic cells, 255.0 GE-weighted | proxy 232.0 | mapped 904.6176 um^2
+RESULT PASS 65536 vectors          trunc_mult_N8_K12
+    yosys: 31 generic cells, 52.5 GE-weighted | proxy 28.0 | mapped 98.8448 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K2
+    yosys: 131 generic cells, 196.5 GE-weighted | proxy 276.5 | mapped 664.3872 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K3
+    yosys: 169 generic cells, 272.0 GE-weighted | proxy 327.5 | mapped 955.9168 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K4
+    yosys: 223 generic cells, 361.0 GE-weighted | proxy 400.5 | mapped 1294.992 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K5
+    yosys: 222 generic cells, 376.5 GE-weighted | proxy 430.5 | mapped 1398.8416 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K6
+    yosys: 285 generic cells, 473.0 GE-weighted | proxy 542.5 | mapped 1646.5792 um^2
+RESULT PASS 65536 vectors          drum_mult_N8_K7
+    yosys: 330 generic cells, 532.5 GE-weighted | proxy 601.5 | mapped 1812.9888 um^2
+RESULT PASS 65536 vectors          mitchell_mult_N8
+    yosys: 335 generic cells, 539.0 GE-weighted | proxy 402.5 | mapped 1848.0224 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K0
+    yosys: 444 generic cells, 621.5 GE-weighted | proxy 526.0 | mapped 2033.2 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K1
+    yosys: 388 generic cells, 589.5 GE-weighted | proxy 522.0 | mapped 2020.688 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K3
+    yosys: 360 generic cells, 551.0 GE-weighted | proxy 500.5 | mapped 1925.5968 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K5
+    yosys: 320 generic cells, 484.0 GE-weighted | proxy 452.0 | mapped 1666.5984 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K8
+    yosys: 208 generic cells, 325.0 GE-weighted | proxy 332.0 | mapped 1132.336 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K10
+    yosys: 126 generic cells, 197.0 GE-weighted | proxy 216.0 | mapped 673.1456 um^2
+RESULT PASS 65536 vectors          booth_mult_N8_K12
+    yosys: 66 generic cells, 97.5 GE-weighted | proxy 127.0 | mapped 311.5488 um^2
+RESULT PASS 16384 vectors          exact_adder_N7
+RESULT PASS 16384 vectors          loa_adder_N7_K1
+RESULT PASS 16384 vectors          trunc_adder_N7_K1
+RESULT PASS 16384 vectors          eta_adder_N7_K1
+RESULT PASS 16384 vectors          ama_adder_N7_K1_CELL0
+RESULT PASS 16384 vectors          ama_adder_N7_K1_CELL1
+RESULT PASS 16384 vectors          loa_adder_N7_K2
+RESULT PASS 16384 vectors          trunc_adder_N7_K2
+RESULT PASS 16384 vectors          eta_adder_N7_K2
+RESULT PASS 16384 vectors          ama_adder_N7_K2_CELL0
+RESULT PASS 16384 vectors          ama_adder_N7_K2_CELL1
+RESULT PASS 16384 vectors          loa_adder_N7_K3
+RESULT PASS 16384 vectors          trunc_adder_N7_K3
+RESULT PASS 16384 vectors          eta_adder_N7_K3
+RESULT PASS 16384 vectors          ama_adder_N7_K3_CELL0
+RESULT PASS 16384 vectors          ama_adder_N7_K3_CELL1
+RESULT PASS 16384 vectors          loa_adder_N7_K5
+RESULT PASS 16384 vectors          trunc_adder_N7_K5
+RESULT PASS 16384 vectors          eta_adder_N7_K5
+RESULT PASS 16384 vectors          ama_adder_N7_K5_CELL0
+RESULT PASS 16384 vectors          ama_adder_N7_K5_CELL1
+RESULT PASS 16384 vectors          loa_adder_N7_K6
+RESULT PASS 16384 vectors          trunc_adder_N7_K6
+RESULT PASS 16384 vectors          eta_adder_N7_K6
+RESULT PASS 16384 vectors          ama_adder_N7_K6_CELL0
+RESULT PASS 16384 vectors          ama_adder_N7_K6_CELL1
+RESULT PASS 16384 vectors          gear_adder_N7_R1_P1
+RESULT PASS 16384 vectors          gear_adder_N7_R1_P3
+RESULT PASS 16384 vectors          gear_adder_N7_R2_P2
+RESULT PASS 16384 vectors          gear_adder_N7_R2_P1
+RESULT PASS 16384 vectors          gear_adder_N7_R3_P1
+RESULT PASS 16384 vectors          gear_adder_N7_R3_P2
+RESULT PASS 16384 vectors          gear_adder_N7_R3_P3
+RESULT PASS 16384 vectors          gear_adder_N7_R6_P1
+RESULT PASS 16384 vectors          gear_adder_N7_R7_P0
+RESULT PASS 16384 vectors          gear_adder_N7_R1_P6
+RESULT PASS 16384 vectors          exact_mult_N7
+RESULT PASS 16384 vectors          bam_mult_N7_VBL0_HBL0
+RESULT PASS 16384 vectors          bam_mult_N7_VBL3_HBL0
+RESULT PASS 16384 vectors          bam_mult_N7_VBL5_HBL2
+RESULT PASS 16384 vectors          bam_mult_N7_VBL7_HBL2
+RESULT PASS 16384 vectors          bam_mult_N7_VBL12_HBL3
+RESULT PASS 16384 vectors          trunc_mult_N7_K0
+RESULT PASS 16384 vectors          trunc_mult_N7_K1
+RESULT PASS 16384 vectors          trunc_mult_N7_K5
+RESULT PASS 16384 vectors          trunc_mult_N7_K7
+RESULT PASS 16384 vectors          trunc_mult_N7_K10
+RESULT PASS 16384 vectors          drum_mult_N7_K2
+RESULT PASS 16384 vectors          drum_mult_N7_K3
+RESULT PASS 16384 vectors          drum_mult_N7_K4
+RESULT PASS 16384 vectors          drum_mult_N7_K5
+RESULT PASS 16384 vectors          drum_mult_N7_K6
+RESULT PASS 16384 vectors          mitchell_mult_N7
+RESULT PASS 16384 vectors          booth_mult_N7_K0
+RESULT PASS 16384 vectors          booth_mult_N7_K1
+RESULT PASS 16384 vectors          booth_mult_N7_K3
+RESULT PASS 16384 vectors          booth_mult_N7_K4
+RESULT PASS 16384 vectors          booth_mult_N7_K7
+RESULT PASS 16384 vectors          booth_mult_N7_K9
+RESULT PASS 16384 vectors          booth_mult_N7_K10
+RESULT PASS 1024 vectors           exact_adder_N5
+RESULT PASS 1024 vectors           loa_adder_N5_K1
+RESULT PASS 1024 vectors           trunc_adder_N5_K1
+RESULT PASS 1024 vectors           eta_adder_N5_K1
+RESULT PASS 1024 vectors           ama_adder_N5_K1_CELL0
+RESULT PASS 1024 vectors           ama_adder_N5_K1_CELL1
+RESULT PASS 1024 vectors           loa_adder_N5_K2
+RESULT PASS 1024 vectors           trunc_adder_N5_K2
+RESULT PASS 1024 vectors           eta_adder_N5_K2
+RESULT PASS 1024 vectors           ama_adder_N5_K2_CELL0
+RESULT PASS 1024 vectors           ama_adder_N5_K2_CELL1
+RESULT PASS 1024 vectors           loa_adder_N5_K3
+RESULT PASS 1024 vectors           trunc_adder_N5_K3
+RESULT PASS 1024 vectors           eta_adder_N5_K3
+RESULT PASS 1024 vectors           ama_adder_N5_K3_CELL0
+RESULT PASS 1024 vectors           ama_adder_N5_K3_CELL1
+RESULT PASS 1024 vectors           loa_adder_N5_K4
+RESULT PASS 1024 vectors           trunc_adder_N5_K4
+RESULT PASS 1024 vectors           eta_adder_N5_K4
+RESULT PASS 1024 vectors           ama_adder_N5_K4_CELL0
+RESULT PASS 1024 vectors           ama_adder_N5_K4_CELL1
+RESULT PASS 1024 vectors           gear_adder_N5_R1_P1
+RESULT PASS 1024 vectors           gear_adder_N5_R1_P2
+RESULT PASS 1024 vectors           gear_adder_N5_R2_P2
+RESULT PASS 1024 vectors           gear_adder_N5_R2_P1
+RESULT PASS 1024 vectors           gear_adder_N5_R3_P1
+RESULT PASS 1024 vectors           gear_adder_N5_R3_P2
+RESULT PASS 1024 vectors           gear_adder_N5_R4_P1
+RESULT PASS 1024 vectors           gear_adder_N5_R5_P0
+RESULT PASS 1024 vectors           gear_adder_N5_R1_P4
+RESULT PASS 1024 vectors           exact_mult_N5
+RESULT PASS 1024 vectors           bam_mult_N5_VBL0_HBL0
+RESULT PASS 1024 vectors           bam_mult_N5_VBL2_HBL0
+RESULT PASS 1024 vectors           bam_mult_N5_VBL3_HBL2
+RESULT PASS 1024 vectors           bam_mult_N5_VBL5_HBL1
+RESULT PASS 1024 vectors           bam_mult_N5_VBL8_HBL2
+RESULT PASS 1024 vectors           trunc_mult_N5_K0
+RESULT PASS 1024 vectors           trunc_mult_N5_K1
+RESULT PASS 1024 vectors           trunc_mult_N5_K3
+RESULT PASS 1024 vectors           trunc_mult_N5_K5
+RESULT PASS 1024 vectors           trunc_mult_N5_K6
+RESULT PASS 1024 vectors           drum_mult_N5_K2
+RESULT PASS 1024 vectors           drum_mult_N5_K3
+RESULT PASS 1024 vectors           drum_mult_N5_K4
+RESULT PASS 1024 vectors           mitchell_mult_N5
+RESULT PASS 1024 vectors           booth_mult_N5_K0
+RESULT PASS 1024 vectors           booth_mult_N5_K1
+RESULT PASS 1024 vectors           booth_mult_N5_K2
+RESULT PASS 1024 vectors           booth_mult_N5_K3
+RESULT PASS 1024 vectors           booth_mult_N5_K5
+RESULT PASS 1024 vectors           booth_mult_N5_K6
+RESULT PASS 1024 vectors           booth_mult_N5_K7
+
+SUMMARY: 173 cases, 173 PASS, 0 FAIL/ERROR, 0 not simulated
