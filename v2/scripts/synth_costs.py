@@ -87,7 +87,9 @@ def v1_cases(n):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=8)
-    ap.add_argument("--liberty", default="/home/claude/work/lib/sky130hd_tt_du.lib")
+    ap.add_argument("--liberty", default=os.environ.get("APPROXKIT_LIBERTY", ""),
+                    help="sky130 (or other) liberty file for the mapped-area column; "
+                         "defaults to $APPROXKIT_LIBERTY, column left empty if unset")
     ap.add_argument("--out", default="results")
     ap.add_argument("--which", default="v2,v1")
     ap.add_argument("--groups", default="", help="v2 only: comma list of groups (smul,div,recip,sq); default all")
@@ -95,7 +97,7 @@ def main():
     ap.add_argument("--jobs", type=int, default=2)
     ap.add_argument("--xilinx", action="store_true", help="also run synth_xilinx (slow: ~9 s/design); v2 designs only")
     a = ap.parse_args()
-    lib = a.liberty if os.path.exists(a.liberty) else None
+    lib = a.liberty if a.liberty and os.path.exists(a.liberty) else None
     if lib is None:
         print("WARNING: liberty not found; sky130 column left empty")
     os.makedirs(a.out, exist_ok=True)

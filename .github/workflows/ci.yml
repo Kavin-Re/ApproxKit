@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[test]"
+      - name: Unit tests (core + v2)
+        run: python -m pytest
+      - name: Tests also run as plain scripts
+        run: |
+          python tests/test_units.py
+          python v2/tests/test_v2.py
+
+  examples:
+    name: Examples and committed results
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e ".[plots]"
+      - name: DSE sweep (n = 8, exhaustive) reproduces results/dse_*_n8.csv
+        run: |
+          python examples/run_dse.py --n 8 --out "$RUNNER_TEMP/dse"
+          python scripts/compare_csv.py "$RUNNER_TEMP/dse/dse_adder_n8.csv" results/dse_adder_n8.csv
+          python scripts/compare_csv.py "$RUNNER_TEMP/dse/dse_multiplier_n8.csv" results/dse_multiplier_n8.csv
+      - name: v2 error sweep reproduces v2/results/errors_v2_n8.csv
+        working-directory: v2
+        run: |
+          python scripts/error_sweep.py --n 8 --out "$RUNNER_TEMP/v2"
+          python ../scripts/compare_csv.py "$RUNNER_TEMP/v2/errors_v2_n8.csv" results/errors_v2_n8.csv
+
+  rtl:
+    name: RTL vs Python models (Icarus Verilog)
+    runs-on: ubuntu-latest
+    continue-on-error: true   # optional job: depends on the distribution's iverilog package
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e .
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends iverilog
+      - name: Core units, exhaustive at n = 8, 7, 5
+        run: |
+          python scripts/rtl_regress.py --out build | tee rtl.log
+          grep -q ' 0 FAIL/ERROR, 0 not simulated' rtl.log
+      - name: v2 units, exhaustive at n = 6, 5
+        working-directory: v2
+        run: python scripts/rtl_regress_v2.py --out build --widths 6,5
+      - name: v2 testbench detects injected RTL faults
+        working-directory: v2
+        run: python scripts/rtl_regress_v2.py --out build --mutations

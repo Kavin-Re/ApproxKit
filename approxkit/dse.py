@@ -49,8 +49,13 @@ def explore(units, mode="auto", samples=1 << 20, seed=0):
 
 
 def pareto_front(rows, cost_key="area_ge", err_key="MRED"):
-    """Non-dominated rows (minimise both). Ties on both are all kept out
-    except the first; result sorted by increasing cost."""
+    """Non-dominated rows when minimising both `cost_key` and `err_key`.
+
+    A row is kept iff no other row is at least as good on both axes and
+    strictly better on one.  Of several rows with identical (cost, error) only
+    the first is kept.  The result is sorted by increasing cost (and therefore
+    strictly decreasing error).
+    """
     pts = sorted(rows, key=lambda r: (r[cost_key], r[err_key]))
     front, best = [], float("inf")
     for r in pts:

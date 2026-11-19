@@ -1,6 +1,6 @@
 """Approximate multipliers (unsigned n x n -> 2n bits), bit-accurate."""
 import numpy as np
-from .base import ApproxUnit, msb_pos
+from .base import ApproxUnit, as_int, msb_pos
 from . import cost
 from .cost import GE
 
@@ -40,9 +40,10 @@ class BrokenArray(ApproxUnit):
 
     def __init__(self, n, vbl, hbl=0):
         super().__init__(n)
-        if not (0 <= vbl <= 2 * n and 0 <= hbl <= n):
+        vbl, hbl = as_int("vbl", vbl), as_int("hbl", hbl)
+        if not (0 <= vbl <= 2 * self.n and 0 <= hbl <= self.n):
             raise ValueError("0<=vbl<=2n, 0<=hbl<=n")
-        self.vbl, self.hbl = int(vbl), int(hbl)
+        self.vbl, self.hbl = vbl, hbl
 
     @property
     def params(self):
@@ -90,9 +91,10 @@ class DRUM(ApproxUnit):
 
     def __init__(self, n, k):
         super().__init__(n)
-        if not (2 <= k <= n):
+        k = as_int("k", k)
+        if not (2 <= k <= self.n):
             raise ValueError("2 <= k <= n")
-        self.k = int(k)
+        self.k = k
 
     @property
     def params(self):
@@ -165,10 +167,11 @@ class BoothApprox(ApproxUnit):
 
     def __init__(self, n, k):
         super().__init__(n)
-        if not (0 <= k <= 2 * n):
+        k = as_int("k", k)
+        if not (0 <= k <= 2 * self.n):
             raise ValueError("0 <= k <= 2n")
-        self.k = int(k)
-        self.D = n // 2 + 1
+        self.k = k
+        self.D = self.n // 2 + 1
 
     @property
     def params(self):

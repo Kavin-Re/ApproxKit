@@ -1,4 +1,22 @@
+# Python
 __pycache__/
-*.pyc
-build/
+*.py[cod]
 *.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# RTL regression / synthesis scratch (scripts write to build/ by default)
+*.vvp
+*.vcd
+v2/build/
+*.partial.csv
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store

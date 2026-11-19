@@ -1,4 +1,4 @@
-"""Error metrics: exhaustive (n <= 12) or Monte Carlo (wider).
+"""Error metrics: exhaustive (n <= 12 by default, n <= 14 on request) or Monte Carlo (wider).
 
 Error e = approx - exact (signed).  With N evaluated input pairs:
   ER   = P(e != 0)
@@ -90,6 +90,9 @@ def evaluate(unit, mode="auto", samples=1 << 20, seed=0, chunk=1 << 22):
             B = np.tile(full, av.size)
             _accumulate(unit, A, B, st)
     elif mode == "monte_carlo":
+        if int(samples) < 1:
+            raise ValueError("monte_carlo needs samples >= 1")
+        samples = int(samples)
         rng = np.random.default_rng(seed)
         left = samples
         while left > 0:

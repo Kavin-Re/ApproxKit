@@ -16,13 +16,25 @@ def msb_pos(x, n):
     return pos
 
 
+def as_int(name, value):
+    """Return `value` as int; reject non-integral values (e.g. k=2.5) instead of
+    silently truncating them."""
+    try:
+        i = int(value)
+    except (TypeError, ValueError):
+        raise ValueError(f"{name} must be an integer, got {value!r}") from None
+    if i != value:
+        raise ValueError(f"{name} must be an integer, got {value!r}")
+    return i
+
+
 class ApproxUnit:
     kind = None          # "adder" | "multiplier"
     family = "base"
     MAX_N = 31
 
     def __init__(self, n):
-        n = int(n)
+        n = as_int("n", n)
         if not (2 <= n <= self.MAX_N):
             raise ValueError(f"{type(self).__name__}: n must be in [2,{self.MAX_N}]")
         self.n = n

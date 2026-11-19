@@ -184,6 +184,35 @@ def test_multipliers_vs_scalar_reference():
         check(ak.BoothApprox(n, 3), ref_booth(n, 3), n=n)
 
 
+def test_wide_widths_vs_bigint_reference():
+    """n = 16, 24, 31 (the int64 limit): numpy models against the arbitrary-precision
+    scalar references on corner values, single-bit operands and seeded random operands."""
+    import random
+    rnd = random.Random(2026)
+
+    def fuzz(unit, ref, n, cnt=400):
+        lim = (1 << n) - 1
+        pick = lambda: rnd.choice([0, 1, lim, lim - 1, 1 << rnd.randrange(n), rnd.randint(0, lim), rnd.randint(0, lim)])
+        a = [pick() for _ in range(cnt)] + [lim, lim, 0]
+        b = [pick() for _ in range(cnt)] + [lim, 0, lim]
+        got = unit(np.array(a, dtype=np.int64), np.array(b, dtype=np.int64))
+        for x, y, g in zip(a, b, got.tolist()):
+            assert g == ref(x, y), f"{unit.name}: a={x} b={y} got={g} ref={ref(x, y)}"
+
+    for n in (16, 24, 31):
+        fuzz(ak.LOA(n, n // 2), ref_loa(n, n // 2), n)
+        fuzz(ak.ETA(n, n - 1), ref_eta(n, n - 1), n)
+        fuzz(ak.AMA(n, n - 1, "inv_carry"), ref_ama(n, n - 1, "inv_carry"), n)
+        fuzz(ak.GeAr(n, 3, 5), ref_gear(n, 3, 5), n)
+        fuzz(ak.BrokenArray(n, n, 2), ref_bam(n, n, 2), n)
+        fuzz(ak.DRUM(n, 6), ref_drum(n, 6), n)
+        fuzz(ak.DRUM(n, n), ref_drum(n, n), n)
+        fuzz(ak.Mitchell(n), ref_mitchell(n), n)
+        fuzz(ak.BoothApprox(n, 0), ref_booth(n, 0), n)
+        fuzz(ak.BoothApprox(n, n), ref_booth(n, n), n)
+        fuzz(ak.ExactMultiplier(n), lambda x, y: x * y, n)
+
+
 def test_exact_limits():
     for n in (5, 6):
         a = np.repeat(np.arange(1 << n), 1 << n)
@@ -223,6 +252,42 @@ def test_range_check():
     except ValueError:
         return
     raise AssertionError("range check missing")
+
+
+def test_parameter_validation():
+    bad = [lambda: ak.LOA(8, 2.5), lambda: ak.LOA(8, 8), lambda: ak.LOA(8, -1), lambda: ak.GeAr(8, 0, 2),
+           lambda: ak.GeAr(8, 5, 4), lambda: ak.DRUM(8, 1), lambda: ak.DRUM(8, 9), lambda: ak.BoothApprox(8, 17),
+           lambda: ak.BrokenArray(8, 17), lambda: ak.TruncatedMultiplier(8, 1.5), lambda: ak.AMA(8, 2, "nope"),
+           lambda: ak.ExactAdder(1), lambda: ak.ExactAdder(32), lambda: ak.LOA(8, "x"),
+           lambda: evaluate(ak.LOA(8, 2), mode="monte_carlo", samples=0),
+           lambda: evaluate(ak.LOA(8, 2), mode="nonsense")]
+    for i, f in enumerate(bad):
+        try:
+            f()
+        except ValueError:
+            continue
+        raise AssertionError(f"case {i} did not raise ValueError")
+    assert ak.LOA(8, np.int64(3)).k == 3 and ak.LOA(8, 3.0).k == 3     # integral values are accepted
+    assert isinstance(ak.LOA(8, np.int64(3)).k, int)
+
+
+def test_pareto_front_is_non_dominated():
+    """Brute-force definition of non-dominance on a real n=6 sweep."""
+    rows = dse.explore(dse.default_designs("adder", 6) + dse.default_designs("multiplier", 6))
+    for kind_rows in ([r for r in rows if "add" in r["family"] or r["family"] in ("loa", "eta", "gear", "ama")],
+                      [r for r in rows if r["family"] in ("exact_mul", "bam", "trunc_mul", "drum", "mitchell", "booth_approx")]):
+        for err in ("MRED", "NMED", "ER"):
+            front = dse.pareto_front(kind_rows, "area_ge", err)
+            pts = {(r["area_ge"], r[err]) for r in front}
+
+            def dominated(r):
+                return any(o["area_ge"] <= r["area_ge"] and o[err] <= r[err]
+                           and (o["area_ge"] < r["area_ge"] or o[err] < r[err]) for o in kind_rows)
+            expect = {(r["area_ge"], r[err]) for r in kind_rows if not dominated(r)}
+            assert pts == expect, (err, sorted(pts ^ expect))
+            costs = [r["area_ge"] for r in front]
+            errs = [r[err] for r in front]
+            assert costs == sorted(costs) and errs == sorted(errs, reverse=True) and len(set(errs)) == len(errs)
 
 
 def test_metrics_vs_bruteforce():

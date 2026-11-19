@@ -6,7 +6,7 @@ Approximation parameter k (or R,P) must leave at least one exact upper bit
 (0 <= k <= n-1); k = 0 is the exact adder where applicable.
 """
 import numpy as np
-from .base import ApproxUnit
+from .base import ApproxUnit, as_int
 from . import cost
 from .cost import GE
 
@@ -34,9 +34,10 @@ class _LowerK(ApproxUnit):
 
     def __init__(self, n, k):
         super().__init__(n)
-        if not (0 <= k <= n - 1):
+        k = as_int("k", k)
+        if not (0 <= k <= self.n - 1):
             raise ValueError("k must satisfy 0 <= k <= n-1")
-        self.k = int(k)
+        self.k = k
 
     @property
     def params(self):
@@ -128,7 +129,8 @@ class GeAr(ApproxUnit):
 
     def __init__(self, n, R, P):
         super().__init__(n)
-        R, P = int(R), int(P)
+        R, P = as_int("R", R), as_int("P", P)
+        n = self.n
         if R < 1 or P < 0 or R + P > n:
             raise ValueError("need R>=1, P>=0, R+P<=n")
         self.R, self.P, self.L = R, P, R + P

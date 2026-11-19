@@ -1,6 +1,6 @@
 # ApproxKit v2 - results, claim-to-script map, caveats
 
-Everything below was produced by the scripts in `scripts/` (run from `v2/`, cloud container; yosys 0.33, iverilog 12.0, Python/numpy).
+Everything below was produced by the scripts in `scripts/` (run from `v2/`; yosys 0.33, iverilog 12.0, Python/numpy).
 Raw numbers are in `results/*.csv`; this file contains no hand-typed measurement that is not in a CSV or log.
 All hardware cost numbers are **estimates from generic yosys flows**; **nothing here is a PolarFire result**.
 
@@ -8,7 +8,7 @@ All hardware cost numbers are **estimates from generic yosys flows**; **nothing 
 
 | # | Claim | Script | Evidence file | CI / exactness | Caveat |
 |---|-------|--------|---------------|----------------|--------|
-| C1 | Python models of all 75 n=8 designs (signed BW trunc/OR-low, signed DRUM, sign-magnitude wrappers, dividers, reciprocal, squarers) are bit-identical to the Verilog | `scripts/rtl_regress_v2.py` (iverilog, self-checking bench, ALL operand combinations incl. b=0 / x=0) | `results/rtl_regress_v2.log`: 285 cases (n=8:75, n=7:74, n=6:71, n=5:65), 285 PASS, 0 FAIL | exhaustive, no sampling | RTL regression log is from the first part of the build (before the rate-limit cut); it was not re-run in this session. Mutation mode (`--mutations`) exists but its result is not part of this evidence. |
+| C1 | Python models of all 75 n=8 designs (signed BW trunc/OR-low, signed DRUM, sign-magnitude wrappers, dividers, reciprocal, squarers) are bit-identical to the Verilog | `scripts/rtl_regress_v2.py` (iverilog, self-checking bench, ALL operand combinations incl. b=0 / x=0) | `results/rtl_regress_v2.log`: 285 cases (n=8:75, n=7:74, n=6:71, n=5:65), 285 PASS, 0 FAIL | exhaustive, no sampling | The RTL regression log is from the first part of the build and was not re-run afterwards. Mutation mode (`--mutations`) exists but its result is not part of this evidence. |
 | C2 | Models agree with independent scalar bit-by-bit references (BW matrix, OR-low, signed DRUM, literal restoring-division loop, squarer matrix) over all operand pairs at n=5,6 | `tests/test_v2.py` | `results/test_v2.log`: 15 tests, ALL PASS | exhaustive | the Mitchell/DRUM dividers and Mitchell squarer/reciprocal have no second independent reference, only structural checks (exact on powers of two, bounds, b=0 convention) plus the RTL equivalence of C1 |
 | C3 | Error metrics (ER, MED, MRED, MRED16, NMED, WCE, bias, RMSE) for every design, exhaustive at n=8 | `scripts/error_sweep.py`, `approxkit_v2/metrics2.py` | `results/errors_v2_n8.csv` | exact (CI half-width 0); Monte-Carlo path (16 batch means, t-95 %) is only used above 2^22 combinations and is checked against the exhaustive value in `test_monte_carlo_matches_exhaustive_within_ci` | MRED is over exact != 0; MRED16 over |exact| >= 16 to remove floor-quantisation artefacts of small quotients; divider metrics exclude b=0 |
 | C4 | Generic-flow FPGA cost estimates and their rank agreement with sky130 | `scripts/synth_costs.py`, `scripts/fpga_rank.py` | `results/costs_*.csv`, `results/rank_corr.csv` | Spearman/Kendall with 95 % bootstrap CI over designs | see section 3 |
@@ -25,7 +25,7 @@ All hardware cost numbers are **estimates from generic yosys flows**; **nothing 
 
 ## 3. Generic-vendor-flow FPGA cost vs sky130 ranking (C4)
 
-**Labelled estimates, NOT PolarFire.** Flows: `synth_ice40`, `synth_ecp5 -nodsp`, (`synth_xilinx` was implemented in the script behind `--xilinx` but NOT run for the reported tables - too slow on the shared container), all yosys 0.33, `-flatten`, DSP inference disabled. "LUT4" columns count LUTs only; carry cells (SB_CARRY / CCU2C) are in separate columns and are not in the LUT count. `ice40nc_lut4` = iCE40 with `-nocarry` (adders mapped to LUTs).
+**Labelled estimates, NOT PolarFire.** Flows: `synth_ice40`, `synth_ecp5 -nodsp`, (`synth_xilinx` is implemented in the script behind `--xilinx` but was NOT run for the reported tables - too slow on the build machine), all yosys 0.33, `-flatten`, DSP inference disabled. "LUT4" columns count LUTs only; carry cells (SB_CARRY / CCU2C) are in separate columns and are not in the LUT count. `ice40nc_lut4` = iCE40 with `-nocarry` (adders mapped to LUTs).
 Reference ranking: v1 flow sky130 (yosys + abc + sky130_fd_sc_hd tt, `results/rtl_synth_n8.csv` of v1; re-synthesis here reproduces it exactly, rho = 1.000 on the 25 v1 multipliers).
 
 | set (n designs) | iCE40 LUT4 | iCE40 -nocarry | ECP5 LUT4 | generic gate-equivalents |
@@ -72,8 +72,8 @@ Interpretation: the identity is an artefact of the two-unsigned-accumulator orga
 
 * No PolarFire/Libero results; vendor-flow numbers are generic yosys estimates (section 3). `synth_xilinx` not run for the tables.
 * Cost analysis covers 71 of 75 v2 designs and 25 of 61 v1 designs (v1 adders omitted for time).
-* Mutation testing of the RTL bench (`rtl_regress_v2.py --mutations`) was not run in this session; the claim that the bench detects broken RTL is untested here.
-* RTL regression log predates this session (not re-run); Python-side tests were re-run (`results/test_v2.log`).
+* Mutation testing of the RTL bench (`rtl_regress_v2.py --mutations`) has not been run; the claim that the bench detects broken RTL is untested.
+* The RTL regression log is from the first part of the build (not re-run); the Python-side tests were re-run (`results/test_v2.log`).
 * Only n=8 cost/quality; n=5-7 used for equivalence testing only. No formal (z3/yosys-smtbmc) equivalence.
 * 8 synthetic images only; no natural-image evaluation; no PSNR on colour or video.
 * Unit-model RTL for dividers uses behavioural `/` (restoring-loop for `div_trunc`), so FPGA/ASIC divider costs depend on yosys's mapping of `/` and `%`.
