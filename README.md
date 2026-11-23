@@ -1,5 +1,9 @@
 # ApproxKit
 
+> **Status: frozen, 2026-11-23.** No new units are planned. **Not done:** a comparison with existing
+> libraries of approximate circuits (see [Where this sits](#where-this-sits)). Until that exists, read this
+> repository as a learning implementation of textbook techniques, not as a new library.
+
 [![CI](https://github.com/Kavin-Re/ApproxKit/actions/workflows/ci.yml/badge.svg)](https://github.com/Kavin-Re/ApproxKit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
@@ -21,6 +25,15 @@ flowchart LR
     V --> Y["yosys synthesis<br/>generic gates / sky130"]
     Y -. "rank check" .-> C
 ```
+
+## Where this sits
+
+Libraries of approximate adders and multipliers already exist; the best known is EvoApproxLib (Mrazek and
+colleagues), which publishes many evolved circuits with error and hardware-cost figures. ApproxKit does not
+compete with them and has not been compared with them. What it holds is the classic families listed under
+[Units](#units), written as bit-accurate models, checked exhaustively against matching Verilog, with the error
+metrics and a Pareto explorer in one place. Its value is as a worked, checked implementation and as a
+companion to the approximate-SAD research mentioned below.
 
 ## Install and quick start
 
@@ -132,6 +145,10 @@ exhaustive, a brute-force non-dominance check of the Pareto front, and the appli
 pass (61 configurations at n = 8 and the same families at n = 7 and n = 5; all 2^(2n)
 operand pairs compared bit-for-bit, including odd widths and non-divisible GeAr windows).
 The testbench was confirmed to fail on deliberately broken RTL (two mutations tried).
+Read 173/173 for what it is: the Verilog and the Python models were written by the same author from the same
+definitions, so the check shows that the two agree, not that either matches the published technique. The
+second line of defence is the scalar bit-level reference in `tests/` (also the author's, written separately);
+the outside anchor is the published descriptions, listed under References.
 Log: `results/rtl_regress.log`.
 
 **Synthesis (yosys 0.33, n = 8, `synth -flatten` then `abc`).** `results/rtl_synth_n8.csv`
